@@ -2,7 +2,7 @@
 
 Welcome to my submission for the AutoVRSE 2D platformer take-home test! This game challenges you to guide a cube through two levels filled with thorns, cannons, and mortars. Your mission is to reach the end of each level successfully.
 
-Game video Link :
+Game video Link : https://youtu.be/64H7M2fEfe8
 
 ## How to Play
 
