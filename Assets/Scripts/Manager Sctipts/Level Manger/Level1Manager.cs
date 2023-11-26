@@ -87,6 +87,12 @@ public class Level1Manager : MonoBehaviour
         }
     }
 
+    //Play SFX from Sound Manager 
+    public void PlaySFX(AudioClip a)
+    {
+        SoundManager.instance.PlaySFX(a);
+    }
+
     //Change State from InstrucionState to Idle State
     public void ChangeStateFromInstruion()
     {

@@ -9,12 +9,13 @@ public class MainMeueManager : MonoBehaviour
 {
     [SerializeField] Slider  SFX , music;
 
-    private void Awake() {
+    private void Start() {
         //play music
         SoundManager.instance.PlayMusic(GameManager.instance.dataManager.MainMenuMusic);
         //Volune Chnaged for Audio Source
         SFXSliderValueChanged();
         musicSliderValueChanged();
+        
     }
     //Change Scene After Wait of X sec 
     public void SceneChanger(int i)
@@ -34,8 +35,8 @@ public class MainMeueManager : MonoBehaviour
     //set Volume of audio source to Slider Value 
     public void SFXSliderValueChanged()
     {
-         GameManager.instance.dataManager.SFXVolume=SFX.value; 
-         SoundManager.instance.SetSFXVolume(SFX.value);
+        GameManager.instance.dataManager.SFXVolume=SFX.value; 
+        SoundManager.instance.SetSFXVolume(SFX.value);
     }
     //set Volume of audio source to Slider Value 
     public void musicSliderValueChanged()
