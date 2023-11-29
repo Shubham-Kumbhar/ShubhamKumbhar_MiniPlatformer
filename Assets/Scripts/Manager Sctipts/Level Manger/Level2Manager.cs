@@ -18,7 +18,7 @@ public class Level2Manager : MonoBehaviour
 
     
     private void Awake() {
-        Player =GameObject.FindAnyObjectByType<PlayerController>();
+        Player =GameObject.FindObjectOfType<PlayerController>();
     }
     private void Start()
     {

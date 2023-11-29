@@ -25,7 +25,7 @@ public class CheckPointSetter : MonoBehaviour
             //set the Camara offset
             if(_overrideCamSetting)
             {
-                cam= FindAnyObjectByType<CamaraMovemnt>();
+                cam= FindObjectOfType<CamaraMovemnt>();
                 cam.xOffset =X;
                 cam.yOffset =Y;
             }

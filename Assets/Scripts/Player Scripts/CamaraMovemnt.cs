@@ -27,7 +27,7 @@ public class CamaraMovemnt : MonoBehaviour
         {
             // Finds the player Transforms if player not Found 
             try{
-                playerTransform = GameObject.FindAnyObjectByType<PlayerController>().gameObject.transform;
+                playerTransform = GameObject.FindObjectOfType<PlayerController>().gameObject.transform;
             }
             catch{
                 Debug.Log("game object not found");

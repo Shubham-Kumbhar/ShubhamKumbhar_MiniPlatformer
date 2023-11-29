@@ -17,7 +17,7 @@ public class Level1Manager : MonoBehaviour
     [SerializeField] float respawnTime=2f;
 
     private void Awake() {
-        Player =GameObject.FindAnyObjectByType<PlayerController>();
+        Player =GameObject.FindObjectOfType<PlayerController>();
     }
 
     private void Update()
